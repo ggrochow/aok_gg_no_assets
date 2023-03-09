@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/images/builds/[className]/[build].js": {
+      "includeFiles": "./public/spell_icons/**"
+    }
+  }
+}

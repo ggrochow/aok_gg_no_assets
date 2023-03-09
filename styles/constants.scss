@@ -1,0 +1,40 @@
+// Description colors
+$colorOrange: #dda22d;
+$colorRed: #e5150e;
+$colorYellow: #f6fd14;
+$colorSky: #86c3d6;
+$colorGreen: #28dc28;
+$colorViolet: #e889e9;
+$colorBrown: #7d4b1c;
+$colorGold: #e3c439;
+$colorTeal: #0f7e83;
+$colorPurple: #9e25e1;
+$colorWhite: #fff;
+$colorSalmon: #df8881;
+
+// Theme colors
+$primaryColor: $colorOrange;
+
+$colorBackgroundBlack: #0C080D;
+$colorBackgroundDarkGrey: #1c1c1c;
+$colorBackgroundLightGrey: #242424;
+$colorBorderGrey: #444;
+
+$colorInputGrey: #333;
+$colorInputBorder: #555;
+
+$colorTextWhite: $colorWhite;
+$colorTextGrey: #9d9d9d;
+
+// Breakpoints
+$mainContentMaxWidth: 1600px;
+$spellListMaxWidth: 750px;
+$spellBarHeight: 100px;
+$spellBarHeightMobile: 150px;
+$spellBarHeightXsMobile: 175px;
+
+$spellBarMobileBreakpoint: 700px;
+$spellBarMobileXsBreakpoint: 500px;
+
+$standardBorderRadius: 4px;
+$standardGutter: 1rem;

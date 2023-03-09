@@ -1,0 +1,55 @@
+@use '../../../styles/constants';
+
+.classContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: constants.$standardGutter;
+}
+
+.a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin: 0 0.5rem;
+
+  &:hover {
+    color: darken(white, 10%)
+  }
+
+  @media (max-width: 850px) {
+    flex-basis: 17%;
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 625px) {
+    flex-basis: 21%;
+  }
+}
+
+.imageWrapper {
+  @media (max-width: 625px) {
+    display: none;
+  }
+}
+
+.image {
+
+}
+
+.active {
+  color: constants.$primaryColor;
+
+  &:hover {
+    color: darken(constants.$primaryColor, 10%)
+  }
+}
+
+.iconButton {
+  margin-top: 0.5rem;
+  flex-basis: 100%;
+  text-align: center;
+  cursor: pointer;
+}

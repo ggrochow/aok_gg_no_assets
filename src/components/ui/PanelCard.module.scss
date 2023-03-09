@@ -1,0 +1,9 @@
+@use '../../../styles/constants';
+
+.container {
+  margin: 0.25rem;
+  border-radius: constants.$standardBorderRadius;
+  border: 1px solid constants.$colorBackgroundDarkGrey;
+  background-color: constants.$colorBackgroundDarkGrey;
+  padding: 1rem;
+}

@@ -1,0 +1,18 @@
+@use '../../styles/constants';
+
+.container {
+    background-color: constants.$colorBackgroundDarkGrey;
+    border-radius: constants.$standardBorderRadius;
+    border: 1px solid constants.$colorBorderGrey;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    width: 500px;
+
+    @media(max-width: constants.$spellBarMobileBreakpoint) {
+        display: none;
+    }
+}

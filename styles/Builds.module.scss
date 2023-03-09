@@ -1,0 +1,36 @@
+@use './constants';
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: calc(#{constants.$spellBarHeight} + #{constants.$standardGutter});
+    @media (max-width: constants.$spellBarMobileBreakpoint) {
+        padding-bottom: calc(#{constants.$spellBarHeightMobile} + #{constants.$standardGutter});
+    }
+
+    @media (max-width: constants.$spellBarMobileXsBreakpoint) {
+        padding-bottom: calc(#{constants.$spellBarHeightXsMobile} + #{constants.$standardGutter});
+    }
+}
+
+.title {
+    display: none;
+}
+
+.spellList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.powerSelectContainer {
+    max-width: constants.$spellListMaxWidth;
+    width: 100%;
+}
+
+.powerInput {
+    margin-left: 0;
+}

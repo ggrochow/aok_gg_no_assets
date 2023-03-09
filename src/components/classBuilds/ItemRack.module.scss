@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.iconSlot {
+  flex-basis: 16%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}

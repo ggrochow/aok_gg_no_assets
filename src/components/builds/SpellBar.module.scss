@@ -1,0 +1,74 @@
+@use '../../../styles/constants';
+
+.container {
+    width: 100%;
+    position: fixed;
+    height: constants.$spellBarHeight;
+    bottom: 0;
+    z-index: 2;
+    background-color: constants.$colorBackgroundDarkGrey;
+    padding-bottom: constants.$standardGutter;
+
+    @media(max-width: constants.$spellBarMobileBreakpoint) {
+        height: constants.$spellBarHeightMobile;
+        padding: 0 0.5rem 0.5rem;
+    }
+
+    @media(max-width: constants.$spellBarMobileXsBreakpoint) {
+        height: constants.$spellBarHeightXsMobile;
+        padding: 0;
+    }
+}
+
+.barHolder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: constants.$colorBackgroundLightGrey;
+    max-width: min(100vw, #{constants.$spellListMaxWidth});
+    border-radius: constants.$standardBorderRadius;
+    height: 100%;
+    margin: auto;
+
+    @media(max-width: constants.$spellBarMobileXsBreakpoint) {
+        flex-wrap: wrap;
+    }
+}
+
+.spellList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+    @media(max-width: constants.$spellBarMobileBreakpoint) {
+        max-width: 300px;
+        margin-top: 0.5rem;
+    }
+}
+
+.flexDivider {
+    display: none;
+    flex-basis: 100%;
+    height: 0;
+    @media(max-width: constants.$spellBarMobileBreakpoint) {
+        display: block;
+    }
+}
+
+.resetButton {
+    @media(max-width: constants.$spellBarMobileXsBreakpoint) {
+        order: 3;
+    }
+}
+
+.copyButton {
+
+}
+
+.resetButton, .copyButton {
+    @media(max-width: constants.$spellBarMobileXsBreakpoint) {
+        flex-basis: 45%;
+    }
+}

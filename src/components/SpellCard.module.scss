@@ -1,0 +1,62 @@
+@use '../../styles/constants';
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container p {
+  margin: 0;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.container p:first-of-type {
+  padding-top: 0.5rem;
+}
+
+.container p.cost, p.range {
+  padding-bottom: 0;
+}
+
+.name {
+  color: constants.$colorWhite;
+  flex-basis: 100%;
+}
+
+.cost {
+  flex-basis: 50%;
+}
+
+.range {
+  color: constants.$colorWhite;
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.cast {
+  color: constants.$colorWhite;
+  flex-basis: 50%;
+}
+
+.cooldown {
+  color: constants.$colorWhite;
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.description {
+  flex-basis: 100%;
+}
+
+.mana {
+  color: constants.$colorSky;
+}
+
+.rage {
+  color: constants.$colorRed;
+}
+
+.energy {
+  color: constants.$colorYellow;
+}

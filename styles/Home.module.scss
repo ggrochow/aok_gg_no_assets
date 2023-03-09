@@ -1,0 +1,27 @@
+@use './constants';
+
+.container {
+  background-color: constants.$colorBackgroundDarkGrey;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  flex: 1;
+  max-width: min(#{constants.$mainContentMaxWidth}, 100vw);
+  margin: auto;
+  background-color: constants.$colorBackgroundDarkGrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}

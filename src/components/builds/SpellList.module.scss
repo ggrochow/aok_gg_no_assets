@@ -1,0 +1,21 @@
+@use '../../../styles/constants';
+
+.container {
+  max-width: constants.$spellListMaxWidth;
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  background-color: constants.$colorBackgroundLightGrey;
+  border-radius: constants.$standardBorderRadius;
+}
+
+.spellContainer {
+  margin: 0.25rem;
+  border-radius: constants.$standardBorderRadius;
+  border: 1px solid constants.$colorBackgroundDarkGrey;
+  background-color: constants.$colorBackgroundDarkGrey;
+}
+
+.active {
+  border: 1px solid constants.$primaryColor;
+}

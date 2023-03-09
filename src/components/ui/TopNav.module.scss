@@ -1,0 +1,31 @@
+@use '../../../styles/constants';
+
+.container {
+  width: 100%;
+  height: 50px;
+  background-color: constants.$colorBackgroundLightGrey;
+}
+
+.innerContainer {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  max-width: constants.$mainContentMaxWidth;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.linkHolder {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  a {
+    text-align: center;
+  }
+}
+
+.active {
+  color: constants.$colorGold;
+}
