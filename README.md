@@ -11,8 +11,8 @@ If you want to run this, you will have to figure out how to get spell/class/item
 - Spell Builds
   - Create and share loadouts for the various classes
   - See how your abilities will scale with power as you get better items
-  - Cool Discord embeds with opengraph
-    [Screenshot of a build shared in Discord with the opengraph preview](/discord_embed_example.png)
+  - Opengraph embeds so users dont need to visit the site to view builds when shared
+  - ![Screenshot of a build shared in Discord with the opengraph preview](/discord_embed_example.png)
 - Options.json helper
   - Page to customize and build an options.json file to customize your UI & Settings
   - Document the various options you can set using the .json file
